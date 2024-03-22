@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1</title>
+</head>
+<body>
+    
+    <script>
+        var nickname = "ira";
+        var heightInInches = "58";
+        var weightInKg = "46";
+
+        var heightInft = parseInt(heightInInches/12);
+        var heightRemainder = heightInInches % 12;
+        var finalHeight = heightInft + "'" + heightRemainder + "\"";
+        var weightInlbs = Math.round(weightInKg * 2.20462);
+
+        alert("Name: " + nickname + "\nHeight: " + finalHeight + "\nWeight: " + weightInlbs);
+
+    </script>
+</body>
+</html>

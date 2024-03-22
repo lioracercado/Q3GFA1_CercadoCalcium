@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 3</title>
+</head>
+<body>
+    <script>
+
+        var choice = "Do you wish to share your personal info in this site?";
+
+        var nickname = "ira";
+        var heightInInches = "58";
+        var weightInKg = "46";
+
+        var heightInft = parseInt(heightInInches/12);
+        var heightRemainder = heightInInches % 12;
+        var finalHeight = heightInft + "'" + heightRemainder + "\"";
+        var weightInlbs = Math.round(weightInKg * 2.20462);
+
+        if(confirm(choice) == true ){
+            console.log("Name: " + nickname + "\nHeight: " + finalHeight + "\nWeight: " + weightInlbs);
+        }
+        else{
+            console.log("User does not wish to share his/her information in this site.");
+        }
+
+    </script>
+</body>
+</html>
